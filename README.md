@@ -58,13 +58,13 @@ So now it’s time to make a small project to show what you have learned yet. Yo
 
 Here is a screenshot, what you will make. You can use your own creativity to make it more beautiful.
 
-![Untitled](JavaScript%20Beginner%20Track/Untitled.png)
+![Untitled](Images/Untitled.png)
 
 Optional: If you want to push yourself to make a more beautiful thing you can make an analog clock also JS concept for it will remain the same, but you have to use creativity in CSS (Hint: rotate property and absolute position)
 
 Here is the screenshot of it. And a link to view it [https://vipul0425.github.io/Analog-watch/](https://vipul0425.github.io/Analog-watch/)
 
-![Untitled](JavaScript%20Beginner%20Track/Untitled%201.png)
+![Untitled](Images/Untitled%201.png)
 
 Hope you enjoyed this task now let’s jump to another level.
 
@@ -134,7 +134,7 @@ Optional: You can give an option of chances users have for example you can give 
 
 Screenshot and link: [Random Number Guesser Game (vipul0425.github.io)](https://vipul0425.github.io/Random-Number-Guesser/)
 
-![Untitled](JavaScript%20Beginner%20Track/Untitled%202.png)
+![Untitled](Images/Untitled%202.png)
 
 Congrats on one more pull request now let’s move on to another level.
 
@@ -164,7 +164,7 @@ Optional: You can add the search feature to search tasks and you can display dat
 
 Screenshot and link: [https://dayplan.netlify.app/](https://dayplan.netlify.app/)
 
-![Untitled](JavaScript%20Beginner%20Track/Untitled%203.png)
+![Untitled](Images/Untitled%203.png)
 
 Hope you enjoyed this task and this track also. This is not an end of JavaScript, there is much more into it. The more you dig the more you will find. So, what’s the **next step?** Well, now you have some basic knowledge you can proceed with some more concepts like promises, callbacks, working with APIs, Async Await, and much more. You can refer to the MDN docs if you like reading or you can refer to some YouTube channels like Traversy Media, Hitesh Chaudhary, Code With Harry, etc. if you prefer video content.
 
