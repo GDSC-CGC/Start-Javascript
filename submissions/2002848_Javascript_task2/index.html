@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Number Guessing Game</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">Number Guessing Game</h1>
+        <div class="score">
+            <p >&#10084; Lives: <span id="lives">3</span></p>
+        </div>
+        <div class="main-box">
+            <h3>Enter a number between 0 to 10</h3>
+            <div class="input-box">
+                <input type="number" name="number" id="number" placeholder="Enter a number">
+                <button type="submit" id="submit" class="forButton">Submit</button>
+            </div>
+            <div class="reset-box">
+                <button type="submit" id="reset" class="forButton">Restart</button>
+            </div>
+            <div class="result-box">
+                <span id="sparkel">	&#10024;</span>
+                <p id="result"> </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- <script>
+
+// Initialising variables
+
+let num = parseInt((Math.random()*10)+1);
+let number = document.getElementById('number');
+let result = document.getElementById('result');
+let winAudio = new Audio('sound/win.mp3');
+let loseAudio = new Audio('sound/lose.mp3');
+let reset = document.getElementById('reset');
+let lives = document.getElementById('lives');
+let sparkel = document.getElementById('sparkel');
+
+let index = 3;
+
+let win = 0;
+
+
+// To resart the game
+reset.addEventListener('click' ,()=>{
+    console.log('reset');
+    index = 3;
+    num = parseInt((Math.random()*10)+1);
+    console.log(num);
+    result.innerText = '';
+    number.innerText = '';
+    button.style.display = 'inline-block'
+    lives.innerText = `${index}`;
+    sparkel.style.display = 'none';
+
+})
+
+
+// To listen Submit Button
+let button = document.getElementById('submit');
+button.addEventListener('click',()=>{
+
+    if(index>0){
+
+        if(number.value == num){
+            
+            sparkel.style.display = 'inline-block';
+            result.innerText = `Congratulations You Won`;
+            result.style.color = 'aqua';
+            winAudio.play();
+            button.style.display = 'none';
+        } 
+        else{
+            result.innerText = `Wrong Guess !! Try Again`;
+            result.style.color = 'red';
+            index--;
+            lives.innerText = `${index}`;
+        }
+    }
+
+    // If index is 0 then lose
+    if(index<=0){
+        win==0;
+        result.innerText = `OOPS You Loss`;
+        button.style.display = 'none';
+        loseAudio.play();
+    }
+    number.value = '';
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script> -->
