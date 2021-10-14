@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Random Number Guess</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains+Mono&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Header-Dark.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="./script.js"></script>
+</head>
+
+<body onload="onLoadFunc()">
+    <header class="header-dark">
+        <nav class="navbar navbar-dark navbar-expand-lg navigation-clean-search">
+            <div class="container"><a class="navbar-brand" style="font-family: 'Dancing Script', serif;font-size: 55px;" href="#">LaKhWaN</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav"></ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container hero">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h1 class="text-center" style="font-family: 'JetBrains Mono', monospace;font-weight: bold;font-style: italic;border-radius: 44px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;border-left-width: 4.4px;border-left-style: solid;box-shadow: 22px 14px 9px var(--bs-gray-900);"><div id="mainHeading"></div></h1>
+                    <h1 style="font-family: ABeeZee, sans-serif;text-align: center;padding: -2px;padding-bottom: 0px;margin-bottom: 40px;margin-top: -41px;text-shadow: 4px 3px 11px var(--bs-yellow);border-left-color: rgb(0,0,0);">Guess a number between 0-10</h1>
+                    <div class="row">
+                        <div class="col">
+                            <h1 style="text-align: right;font-family: Lato, sans-serif;text-shadow: 3px 4px 13px var(--bs-red);">Total lives:&nbsp;</h1>
+                        </div>
+                        <div class="col">
+                            <h1 style="font-family: Lato, sans-serif;text-shadow: 5px 2px 20px var(--bs-red);"><div id="lives"></div></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="margin-top: 4px;margin-right: -8px;margin-left: 115px;"><input id="numberInput" type="number" style="margin: 10%;padding: 0px;padding-top: 0px;padding-right: 0px;height: 44px;width: 240.6px;text-align: center;border-radius: 44px;border-width: 3px;border-style: groove;border-left-style: solid;box-shadow: 7px 7px 20px rgb(0, 0, 0);font-size: 25px;font-family: 'JetBrains Mono', monospace;"></div>
+                        <div class="col"><button onclick="lives()" class="btn btn-primary" type="button" style="border-radius: 43px;border-width: 2px;border-style: hidden;width: 240px;height: 44px;margin: 10%;padding: 0px;font-family: 'JetBrains Mono', monospace;font-size: 28px;box-shadow: 17px 12px 20px 7px var(--bs-gray-900);">Check!</button></div>
+                    
+                    </div>
+                    <div class="row">
+                        <!-- <div class="col" style="margin-top: 4px;margin-right: -8px;margin-left: 115px;"></div> -->
+                        <div class="col"><button onclick="reset()" class="btn btn-primary" type="button" style="border-radius: 43px;border-width: 2px;border-style: hidden;width: 540px;height: 44px;margin: 10%;padding: 0px; margin-left:160px;font-family: 'JetBrains Mono', monospace;font-size: 28px;box-shadow: 17px 12px 20px 7px var(--bs-gray-900);">Reset</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
