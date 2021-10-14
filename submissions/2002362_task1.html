@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - DIGITAL CLOCK</title>
+    <style type="text/css">
+        body{
+            
+            background: black;
+            color: white;
+            font-size: 60px;
+
+        }
+         .clock{
+             position: absolute;
+            color:orangered;
+            font-family: fantasy;
+            text-shadow: 3px 3px 8px rgb(143, 42, 5) ;
+            font-size: 80px;
+            font-weight: 700;
+            border: 7px solid orangered;
+             padding: 1px 5px 1px 5px; 
+        } 
+    </style>
+</head>
+<body>
+    <p><i> Current Time is:</i></p>
+    <div id ="MyClock" class="clock"></div>
+    
+    <script type="text/javascript">
+        function showTime(){
+            var date = new Date();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            if (h<10) {
+                h = "0"+h;
+            }
+            if (m<10) {
+                m = "0"+m;
+            }
+            if (s<10) {
+                s = "0"+s;
+            }
+
+            var time = h + " : " + m + " : " + s;
+            
+            document.getElementById("MyClock").innerText=time;
+            document.getElementById("MyClock").textContent=time;
+
+        }
+        showTime();
+        setInterval(showTime,1000);
+    </script>
+    
+</body>
+</html>
