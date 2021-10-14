@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        #container{
+            background-color: gray;
+            border: 5px solid white;
+            height:275px;
+            width: 750px;
+            margin: auto;
+            text-align: center;
+        }
+        p{
+            color: white;
+            font-size: 30px;
+        }
+        #input{
+            width: 100px;
+            margin: 25px auto;
+        }
+        #btn{
+            margin: 25px auto auto 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Number Guesser Game</h1>
+    <div id="container">
+        <p>guess a number between 0 to 10</p>
+        
+
+        <p id="outputText">enter a number below</p>
+        <input type="text" id="userInput"><button id="btn">Enter</button>
+        <p id="result"></p>
+    </div>
+    <script>
+        let btn = document.getElementById('btn');
+        let output = document.getElementById('outputText');
+        let output1 = document.getElementById('out');
+        let answer = document.getElementById('result');
+        let number = [Math.floor(Math.random()*10)]
+        btn.addEventListener('click', function(){
+            let input = document.getElementById('userInput').value;
+                
+                if (input==number) {
+                answer.innerHTML = 'RIGHT GUESS!!';
+
+            }
+            else{
+                answer.innerHTML = 'Wrong guess!! Try Again';
+          
+            }
+                
+            
+           
+        })
+    </script>
+</body>
+</html>
