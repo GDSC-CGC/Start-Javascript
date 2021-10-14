@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amita&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains+Mono&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Header-Blue.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header class="header-blue">
+        <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search" style="text-align: center;">
+            <div class="container-fluid"><a class="navbar-brand" href="#" style="font-family: Aclonica, sans-serif;font-size: 48px;padding: 4px 0px;text-align: center;">Digital Clock - LaKhWaN</a><button class="navbar-toggler" data-bs-toggle="collapse"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+        </nav>
+        <div class="container hero" style="text-align: center;">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-xl-5 offset-xl-1" style="font-family: 'JetBrains Mono', monospace;">
+                    <h1 style="height: -77px;text-shadow: 14px 14px 13px var(--bs-dark);font-weight: bold;margin: 161px 0px 24px;padding: 0px;text-align: right;padding-bottom: 276px;">Current Time:</h1>
+                </div>
+                <div class="col"><div id="clock" style="color:white; height: -77px;text-shadow: 14px 14px 13px var(--bs-dark);font-weight: bold;margin: 115px 0px 24px;padding: 0px;font-size:75px;">
+    <script>
+        function time(){
+        var date = new Date();
+        var h = date.getHours();
+        var m = date.getMinutes();
+        var s = date.getSeconds();
+        var time = h+":"+m+":"+s;
+
+        document.getElementById("clock").innerText = time;
+    }
+    time();
+    </script>
+</div></div>
+            </div>
+        </div>
+    </header>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
