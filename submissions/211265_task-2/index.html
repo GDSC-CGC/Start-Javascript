@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Guesser Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="container">
+       <h2>Random Number Guesser Game</h2>
+       <div id="game">
+        <form id="input-form">
+            <label for="guessInput"> <h5> Guess a Number between 0 to 10 </h5></label>
+            <h6>Lives <i class="fas fa-heart"></i> left: <span id="life"></span> </h6>       
+           <input type="number" name="guess" id="guessInput" placeholder="Enter Your Guess Here" min="0">
+           <input type="submit" id="guess-btn" class="button-primary">
+           <br>
+           <button type="button" id="restart">Restart Game</button> 
+           <p id="message"></p>
+        </form>
+   </div>
+   </div>
+
+   <script src="app.js"></script>
+</body>
+</html>
